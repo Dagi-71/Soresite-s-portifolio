@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soresite · builds for the web</title>
+  <!-- 完全不同：使用Inter & Playfair 字体，简洁中性 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+  <!-- Font awesome (仅用于简单图标) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- 外部 CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 导航 · 极简无主题切换 -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="#hero">Soresite</a>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#hero" class="nav-link active-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Works</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO 区块 · 完全不同图片与文案 -->
+  <section id="hero" class="hero">
+    <div class="hero-container">
+      <div class="hero-content scroll-fade">
+        <h1>crafted by <span class="hero-name">Soresite</span></h1>
+        <p class="hero-sub">I like to build simple, functional things for the web. Currently learning how to turn coffee into code and ideas into reality.</p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn primary-btn">browse work</a>
+          <a href="#contact" class="btn outline-btn">say hello</a>
+        </div>
+      </div>
+      <div class="hero-visual scroll-fade">
+        <div class="hero-image-frame">
+          <!-- 使用免费占位图，代表她 —— 选择一张中性、自然的头像图片（unsplash 风格） -->
+          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&auto=format&fit=crop&q=60" alt="Soresite profile">
+        </div>
+        <div class="hero-caption">— addis ababa based —</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT 故事：真实而简单 -->
+  <section id="about" class="about section alt-bg">
+    <div class="container">
+      <h2 class="section-title">about me</h2>
+      <div class="about-grid">
+        <div class="about-img scroll-fade">
+          <img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?w=400&auto=format&fit=crop&q=60" alt="Soresite working">
+        </div>
+        <div class="about-text scroll-fade">
+          <p class="lead">I’m Soresite, a high school student with a love for building things on the web.</p>
+          <p>I grew up in Addis Ababa, and I’ve always been curious about how websites work. I started by editing blog templates, then slowly learned to write my own HTML and CSS. Now I’m diving into JavaScript to make pages interactive.</p>
+          <p><strong>outside coding:</strong> I enjoy journaling, taking photos with my phone, and helping my little brother with math. I believe small, consistent steps lead to big changes.</p>
+          <div class="badge-group">
+            <span class="badge">✦ student</span>
+            <span class="badge">✦ self‑taught</span>
+            <span class="badge">✦ daydreamer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES 开发三件套 (完全不同文案) -->
+  <section id="services" class="services section">
+    <div class="container">
+      <h2 class="section-title">what i do</h2>
+      <div class="services-grid">
+        <div class="service-item scroll-fade">
+          <div class="service-icon"><i class="fab fa-html5"></i></div>
+          <h3>HTML struct.</h3>
+          <p>Semantic, accessible markup — the skeleton that makes sense for everyone.</p>
+        </div>
+        <div class="service-item scroll-fade">
+          <div class="service-icon"><i class="fab fa-css3-alt"></i></div>
+          <h3>CSS styling</h3>
+          <p>Layouts, colors, responsive design. I like clean and functional aesthetics.</p>
+        </div>
+        <div class="service-item scroll-fade">
+          <div class="service-icon"><i class="fab fa-js"></i></div>
+          <h3>JavaScript</h3>
+          <p>Adding small interactions, form validation, and dynamic content.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS · 四个简单技能点 (不用进度条，用标签) -->
+  <section id="skills" class="skills section alt-bg">
+    <div class="container">
+      <h2 class="section-title">skills & tools</h2>
+      <div class="skills-list">
+        <div class="skill-row scroll-fade">
+          <span class="skill-name">HTML & CSS</span>
+          <span class="skill-level">confident</span>
+        </div>
+        <div class="skill-row scroll-fade">
+          <span class="skill-name">JavaScript (basics)</span>
+          <span class="skill-level">learning</span>
+        </div>
+        <div class="skill-row scroll-fade">
+          <span class="skill-name">photo editing (snapseed)</span>
+          <span class="skill-level">everyday</span>
+        </div>
+        <div class="skill-row scroll-fade">
+          <span class="skill-name">document & note taking</span>
+          <span class="skill-level">organized</span>
+        </div>
+      </div>
+      <div class="skill-tags">
+        <span class="skill-tag">problem solving</span>
+        <span class="skill-tag">google</span>
+        <span class="skill-tag">figma (beginner)</span>
+        <span class="skill-tag">patience</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS (works) 简单卡片，无覆盖，直接展示 -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <h2 class="section-title">recent works</h2>
+      <div class="projects-grid">
+        <div class="work-card scroll-fade">
+          <img class="work-img" src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=400&auto=format&fit=crop&q=60" alt="project one">
+          <div class="work-info">
+            <h3>local book club</h3>
+            <p>simple website for a neighbourhood reading group – HTML, CSS.</p>
+          </div>
+        </div>
+        <div class="work-card scroll-fade">
+          <img class="work-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&auto=format&fit=crop&q=60" alt="project two">
+          <div class="work-info">
+            <h3>my journal app</h3>
+            <p>prototype of a digital diary using basic JavaScript.</p>
+          </div>
+        </div>
+        <div class="work-card scroll-fade">
+          <img class="work-img" src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&auto=format&fit=crop&q=60" alt="project three">
+          <div class="work-info">
+            <h3>ethio recipes</h3>
+            <p>collection of traditional dishes – practice with grid & typography.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT + footer (简单, 无地图) -->
+  <section id="contact" class="contact section alt-bg">
+    <div class="container">
+      <h2 class="section-title">contact me</h2>
+      <div class="contact-grid">
+        <div class="contact-details scroll-fade">
+          <p><i class="fas fa-envelope"></i> soresite.work@email.com</p>
+          <p><i class="fas fa-phone-alt"></i> +251 987 654 321</p>
+          <p><i class="fas fa-map-pin"></i> Addis Ababa, Ethiopia</p>
+          <p style="margin-top: 2rem; font-style: italic;">open to small projects or just a chat :)</p>
+        </div>
+        <form class="contact-form scroll-fade" id="contactForm">
+          <input type="text" placeholder="your name" required>
+          <input type="email" placeholder="email address" required>
+          <textarea rows="4" placeholder="tell me about your idea..." required></textarea>
+          <button type="submit">send message</button>
+        </form>
+      </div>
+      <footer class="footer">
+        <p>© 2026 Soresite · built with intention, no frameworks</p>
+      </footer>
+    </div>
+  </section>
+
+  <!-- 外部 JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
